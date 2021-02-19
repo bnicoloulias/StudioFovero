@@ -12,7 +12,7 @@
       fn.Typed();
       fn.Swiper();
       fn.Vivus();
-      fn.Overlay();
+      //fn.Overlay();
       fn.OwlCarousel();
       fn.Apps();
     },
@@ -45,7 +45,7 @@
               }
           });
       });
-      
+
       $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
         disableOn: 700,
         type: 'iframe',
@@ -216,7 +216,7 @@
             1200: { items: items[0] || 1}
           }
         };
-        
+
         a.owlCarousel(options);
       });
     },
@@ -261,8 +261,8 @@
       $('[data-toggle="tooltip"]').tooltip();
 
 
-      skrollr.init({  
-          forceHeight: false,        
+      skrollr.init({
+          forceHeight: false,
           mobileCheck: function() {
               //hack - forces mobile version to be off
               return false;

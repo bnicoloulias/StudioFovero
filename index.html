@@ -10,7 +10,7 @@
   <body>
 
     <!-- header -->
-    <header class="header-sticky header-dark">
+    <header class="header-sticky header-dark headroom headroom--not-bottom headroom--pinned headroom--top">
       <div class="container">
         <nav class="navbar navbar-expand-lg navbar-dark">
           <a class="navbar-brand" href="index.html">
@@ -118,21 +118,21 @@
             <div class="row gutter-0">
               <div class="col-sm-6 col-md-4 col-lg-4" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                 <div class="bordered rising p-3">
-                  <img class="img-fluid fs-40 mb-3" src="assets/images/studio/musephoto.png">
+                  <img class="img-fluid fs-20 mb-3" src="assets/images/studio/musephoto.png">
                   <h4 class="mb-0">Salon Services</h4>
                   <p>color, cut & style, perms & relaxers, hair taming systems</p>
                 </div>
               </div>
               <div class="col-sm-6 col-md-4 col-lg-4" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="150">
                 <div class="bordered rising p-3">
-                  <img class="img-fluid fs-40 mb-3" src="assets/images/studio/museimages1.png">
+                  <img class="img-fluid fs-20 mb-3" src="assets/images/studio/museimages1.png">
                   <h4 class="mb-0">Spa Services</h4>
                   <p>facial, makeup, waxing service, manicures & pedicures</p>
                 </div>
               </div>
               <div class="col-sm-6 col-md-4 col-lg-4" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="300">
                 <div class="bordered rising p-3">
-                  <img class="img-fluid fs-40 mb-3" src="assets/images/studio/museimages2.png">
+                  <img class="img-fluid fs-20 mb-3" src="assets/images/studio/museimages2.png">
                   <h4 class="mb-0">Products</h4>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                 </div>
@@ -160,16 +160,37 @@
                 </p>
               </div>
             </div>
-            <div class="row justify-content-center text-center">
-              <div class="col-lg-6">
+            <div class="row justify-content-center">
+              <div class="col-lg-4">
                 <div class="media bordered rounded p-2 align-items-center">
-                  <i class="icon-clock fs-24 text-green mr-2"></i>
+                  <i class="icon-location-arrow fs-30 text-green"></i>
+                  <div class="media-body">
+                    <ul style="list-style: none;">
+                      <li><a href="https://www.google.com/maps/place/102+E+Whittier+St,+Columbus,+OH+43206/@39.944317,-82.9964199,17z/data=!3m1!4b1!4m5!3m4!1s0x88388f4d5ea853cd:0x61b0596549187cac!8m2!3d39.944317!4d-82.9942312">102 East Whittier St<br>Columbus, Ohio 43206</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="media bordered rounded p-2 align-items-center">
+                  <i class="icon-clock fs-30 text-green"></i>
                   <div class="media-body">
                     <ul style="list-style: none;">
                       <li>Monday: Closed</li>
                       <li>Tuesday - Thursday: 10am - 8pm</li>
                       <li>Friday and Saturday: 9am - 5pm</li>
                       <li>Sunday: 10am - 4pm</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="media bordered rounded p-2 align-items-center">
+                  <i class="icon-phone fs-30 text-green"></i>
+                  <div class="media-body">
+                    <ul style="list-style: none;">
+                      <li>Call Us!</li>
+                      <li><a href="tel:+16144458866">614.445.8866</a></li>
                     </ul>
                   </div>
                 </div>
@@ -268,7 +289,7 @@
            // Styles a map in night mode.
         var map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: 39.944310, lng: -82.994290},
-          zoom: 15,
+          zoom: 16,
           disableDefaultUI: true,
           styles: [
             {
@@ -432,7 +453,7 @@
           ]
         });
 
-        var pin ='/assets/images/pin-yellow.svg';
+        var pin ='assets/images/pin-green.svg';
 
         var marker = new google.maps.Marker({
           position: map.getCenter(),
